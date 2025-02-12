@@ -3,11 +3,51 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb On Off</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 270px;
+            background-color: #f1f1f1;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .bulb{
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+
+        }
+        .buttons{
+            display: flex;
+            justify-content:space-around;
+            margin: 10px;
+        }
+        .btn-toggle{
+            width: 100px;
+            font-size: 20px;
+            border: none;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        .btn-off{
+            background-color: red;
+            color: white;
+        }
+        .btn-on{
+            background-color: green;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <img src="on.png" id="bulb" class="bulb"/>
-    <div class="buttons">
-    
+       <div class="buttons">
+           <button class="btn-toggle btn-off" onclick="off()">Off</button>
+            <button  class="btn-toggle btn-on" onclick="on()">On</button>
+        </div>
+    </div>
 </body>
 </html>
