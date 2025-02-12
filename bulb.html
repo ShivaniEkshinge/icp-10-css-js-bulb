@@ -6,7 +6,7 @@
     <style>
         .container{
             width: 300px;
-            height: 270px;
+            height: 330px;
             background-color: #f1f1f1;
             display: block;
             margin: 0 auto;
@@ -17,6 +17,7 @@
             height: 200px;
             display: block;
             margin: 0 auto;
+            padding: 30px;
 
         }
         .buttons{
@@ -49,5 +50,16 @@
             <button  class="btn-toggle btn-on" onclick="on()">On</button>
         </div>
     </div>
+    <script>
+        const bulbElement = document.getElementById("bulb");
+
+        function on() {
+            bulbElement.src= "on.png";
+        }
+
+        function off() {
+            bulbElement.src= "off.png";
+        }
+    </script>   
 </body>
 </html>
