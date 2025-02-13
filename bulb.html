@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb On Off</title>
     <style>
+        body{
+            background-color:  #e6f2ff;
+        }
         .container{
             width: 300px;
             height: 330px;
@@ -12,6 +15,7 @@
             margin: 0 auto;
             border-radius: 10px;
             border: 1px solid black;
+            background-color: #cce6ff;
         }
         .bulb{
             height: 200px;
@@ -33,12 +37,17 @@
             padding: 5px;
         }
         .btn-off{
-            background-color: red;
+            background-color: black;
             color: white;
         }
         .btn-on{
-            background-color: green;
+            background-color: blue;
             color: white;
+        }
+        @media screen and (max-width:500px){
+            .container{
+                width: 50%;
+            }
         }
     </style>
 </head>
